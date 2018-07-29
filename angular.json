@@ -7,7 +7,7 @@
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
-      "prefix": "app",
+      "prefix": "ccm2",
       "schematics": {},
       "architect": {
         "build": {
@@ -50,11 +50,13 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ccm2-site:build"
+            "browserTarget": "ccm2-site:build",
+            "host": "0.0.0.0"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ccm2-site:build:production"
+              "browserTarget": "ccm2-site:build:production",
+              "host": "0.0.0.0"
             }
           }
         },

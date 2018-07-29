@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/ccm2-site",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.h0tml"
+      }
+    ]
+  }
+}
