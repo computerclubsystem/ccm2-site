@@ -5,6 +5,7 @@ import { SharedModule } from './shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuModule } from './menu/menu.module';
+import { DataService } from './shared/data.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,9 @@ import { MenuModule } from './menu/menu.module';
     AppRoutingModule,
     MenuModule
   ],
-  providers: [],
+  providers: [
+    DataService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
