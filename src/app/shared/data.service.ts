@@ -1,10 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-
 @Injectable()
 export class DataService {
-  private baseApiUrl = 'https://us-central1-ccm2-site.cloudfunctions.net/';
+  private baseApiUrl = '/api/';
   private version?: Version;
 
   constructor(private http: HttpClient) { }
